@@ -1,12 +1,12 @@
 import "./App.css";
 import React from 'react';
-import ToDoForm from "./components/ToDoForm/ToDoForm";
+import ToDoWrapper from "./components/ToDoWrapper/ToDoWrapper";
 
 function App() {
   return (
     <div className="App">
-      TO DO LIST
-      <ToDoForm />
+      TO DO LIST!!
+      <ToDoWrapper />
     </div>
   );
 }
