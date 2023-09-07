@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ToDoForm = () => {
+const ToDoForm = ({addToDo}) => {
 
     const [task, setTask] = useState('');
 
@@ -9,7 +9,7 @@ const ToDoForm = () => {
         let newTask = {
             task: task
         };
-        console.log(newTask);
+        addToDo(newTask);
     }
 
     return ( 
