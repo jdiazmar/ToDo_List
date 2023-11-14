@@ -10,12 +10,14 @@ const ToDoForm = ({addToDo}) => {
             task: task
         };
         addToDo(newTask);
+
+        setTask('')
     }
 
     return ( 
         <form onSubmit={handleSubmit}>
             <div>
-            <input type='text' placeholder='Create Task' onChange={(event) => setTask(event.target.value)} />
+            <input type='text' value={task} placeholder='Create Task' onChange={(event) => setTask(event.target.value)} />
             <button type='submit'>Add</button>
             </div>
         </form>
